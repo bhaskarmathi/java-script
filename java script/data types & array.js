@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body:201>
-    <script>
-
-// var a = (1,2,3,4,5,6,7,8,9);
+ <!-- var a = (1,2,3,4,5,6,7,8,9);
 //  var b =(11,22,33,44,55,50);
 
 //  console.log(a+b);
@@ -382,19 +372,12 @@
 // };
 // console.log(person.age);
 
-function outer() {
-  let name = "Bhaskar";
+// function outer() {
+//   let name = "Bhaskar";
 
-  function inner() {
-    console.log(name);
-  }
+//   function inner() {
+//     console.log(name);
+//   }
 
-  return inner;
-}
-
-let fun = outer();
-fun(); 
-
-</script>
-</body:201>
-</html>
+//   return inner;
+// }

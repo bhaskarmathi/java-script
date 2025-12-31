@@ -1,3 +1,101 @@
+// let marks = 35
+//   if (marks >= 35) {
+//   console.log("Pass");
+// } else {
+//   console.log("Fail"); else if
+// }
+
+
+
+// let marks = 50;
+// if(marks >=90){
+//   console.log("A grade");
+// }else if(marks >=60){
+//   console.log("B grade");
+// } else (marks <=30);
+//  {
+//   console.log("fail");
+//  }
+
+  
+  
+
+  // let marks = 10;  else if
+// if( marks >= 100)
+// {
+//   console.log("A grade");
+// } else if ( marks >= 60)
+// {
+//   console.log("B grade");
+// } else {
+//   console.log("fail");
+// }
+// let age = 20
+//   if(age >18){
+//     if(age)
+//     console.log("allowed"); nested loop
+//   }
+  
+
+ 
+//   let marks = 60;  if else 
+// if(marks>=82)
+// {
+// console.log("passed");
+// }else if (marks >=50){
+//   console.log("pass mark");
+// }
+
+
+// let marks = 35
+//   if (marks >= 35) {
+//   console.log("Pass");
+// } else {
+//   console.log("Fail"); else if
+// }
+
+
+
+// let marks = 50;
+// if(marks >=90){
+//   console.log("A grade");
+// }else if(marks >=60){
+//   console.log("B grade");
+// } else (marks <=30);
+//  {
+//   console.log("fail");
+//  }
+
+  
+  
+
+  // let marks = 10;  else if
+// if( marks >= 100)
+// {
+//   console.log("A grade");
+// } else if ( marks >= 60)
+// {
+//   console.log("B grade");
+// } else {
+//   console.log("fail");
+// }
+// let age = 20
+//   if(age >18){
+//     if(age)
+//     console.log("allowed"); nested loop
+//   }
+  
+
+ 
+//   let marks = 60;  if else 
+// if(marks>=82)
+// {
+// console.log("passed");
+// }else if (marks >=50){
+//   console.log("pass mark");
+// }
+
+
 // var :- we can re-assign the valuable
         //   update value
         // function scope
@@ -134,35 +232,25 @@
 
 
 
-let a = 10;
-console.log(typeof(a));
+// let a = 10;
+// console.log(typeof(a));
 
-var b = "30";
-console.log(typeof(b));
+// var b = "30";
+// console.log(typeof(b));
 
-const c = (true);
-console.log(typeof(c));
+// const c = (true);
+// console.log(typeof(c));
 
-const userId = (symbol());
-console.log(typeof(userId));
+// const userId = (symbol());
+// console.log(typeof(userId));
 
-const highScore = (bigInt (142585798541855));
-console.log(typeof(highscore));
-
-
-let h = null;
-console.log((h));
-
-let j = 
-console.log(typeof(j)); 
+// const highScore = (bigInt (142585798541855));
+// console.log(typeof(highscore));
 
 
+// let h = null;
+// console.log((h));
 
- 
-
-
-
-
-
-
+// let j = 
+// console.log(typeof(j)); 
 
