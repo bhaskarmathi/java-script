@@ -28,7 +28,8 @@
 
 // new line operator
 
-//  let a = ("hello"); b = ("world");
+//  let a = ("hello");
+  // let b = ("world");
 //  console.log("hello"+"\n"+"world");
 
 // relational operators
