@@ -712,3 +712,42 @@
 // }
 
 
+
+
+// let name = "bhaskar"
+// let reverse = ""
+// for(let i=name.length-1;i>=0;i--){
+// 	reverse=reverse+name[i]
+// }
+// console.log(reverse);
+
+
+// let arr =[123456];
+// let reverse = [];
+// while(arr>0){
+// 	let digit = arr%10
+// 	reverse=reverse*10+digit
+// 	arr=Math.floor(arr/10);
+// }
+// console.log(reverse);
+
+
+// let num =0;
+// while(num<=50){
+// 	let i =2;
+// 	isPrime=true;
+// 	while(i<=Math.sqrt(num)){
+// 		if(num%i===0){
+// 			isPrime=false;
+		
+// 		}
+// 		i++;
+// 	}
+
+// if(isPrime){
+// 	console.log("prime"+ num);
+// }else{
+// 	console.log("not prime"+ num)
+// }
+// num++;
+// }

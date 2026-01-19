@@ -194,23 +194,23 @@
 
 
 
-let num = 18;
-let i = 2;
-isPrime = true;
+// let num = 18;
+// let i = 2;
+// isPrime = true;
 
-if(num<=1){
-	isPrime=false;
-}else{
-	while(i<=Math.sqrt(num)){
-		if(num%i===0){
-			isPrime=false;
-		}
-		i++;
-	}
-}
-if(isPrime){
-	console.log("prime");
-}else{
-	console.log("not a prime");
-};
+// if(num<=1){
+// 	isPrime=false;
+// }else{
+// 	while(i<=Math.sqrt(num)){
+// 		if(num%i===0){
+// 			isPrime=false;
+// 		}
+// 		i++;
+// 	}
+// }
+// if(isPrime){
+// 	console.log("prime");
+// }else{
+// 	console.log("not a prime");
+// };
 
