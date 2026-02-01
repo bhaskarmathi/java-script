@@ -114,7 +114,7 @@
 // if(isPrime){
 // 	console.log("prime");
 // }else{
-// 	console.log("not a prime");
+// 	console.log("odd");
 // }
 
 
@@ -161,7 +161,7 @@
 // console.log(largest)
 
 
-// // 
+// 
 
 
 // let name = "bhaskar";
