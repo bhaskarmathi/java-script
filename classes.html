@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+<script>
+    
+// class Car {
+//     constructor(name, year) {
+//         this.name = name;
+//         this.year = year;
+//     } age() {
+//         const date = new Date();
+//         return date.getFullYear() - this.year
+//     }
+
+// }
+
+// const myCar = new Car("mustang", 2014)
+// const myCar2 = new Car ("access",2022)
+// console.log(myCar2);
+
+
+// class car{
+// 	constructor (name, year) {
+// 		this.car =  car;
+// 		this.year =  year;
+// 	}age(currentYear = new Date().getFullYear()){
+// 		return currentYear - this.year;
+// 	}
+	
+// }
+// const myCar = new car("volvo",2010)
+// const myCar2 = new car("benz",2011)
+// console.log(myCar)
+// console.log(myCar.age())
+// console.log(myCar2.age(2026))
+
+
+// class myCar {
+// 	constructor (name,year){
+// 		this.name = name;
+// 		this.year = year;
+// 	}age(x) {
+// 	return x - this.year
+		
+// 	}
+// }
+// const date = new Date();
+// let year = date.getFullYear();
+// const car = new myCar("volvo",2012)
+
+// console.log(car);
+// console.log(car.age(2030))
+
+
+
+// class Vehicle {
+//   constructor(type, brand, year) {
+// 	this.type = type;
+// 	this.brand = brand;
+// 	this.year = year;
+//   }
+
+//   getAge(currentYear = new Date().getFullYear()) {
+// 	return currentYear - this.year;
+//   }
+// }
+
+// class ElectricVehicle extends Vehicle {
+//   constructor(type, brand, year, batteryCapacity) {
+// 	super(type, brand, year);
+// 	this.batteryCapacity = batteryCapacity;
+//   }
+
+//   getBatteryInfo(unit) {
+// 	return "Battery: " + this.batteryCapacity + " " + unit;
+//   }
+// }
+
+// const ev = new ElectricVehicle("Scooter", "Ola", 2022,4);
+// const car = new ElectricVehicle("car","volvo",2020,5)
+// console.log(.getAge());
+// consoler.log(car.getBatteryInfo());
+// console.log(ev.getAge());
+// console.log(ev.getBatteryInfo("kWh"));
+
+// class mobiles{
+//     constructor(model,price,ram,rom){
+//         this.model = model;
+//         this.price = price;
+//         this.ram = ram,
+//         this.rom = rom;
+//     }
+//     upDate(upDateRam){
+//         this.upDateRam = upDateRam
+//     }
+//     setPrice(p){
+//         if(price<=0){
+//             alert("price cannot be zero");
+//            } else{
+//             this.price = price;
+//             }
+//     }
+
+//     get getName(){
+//         return("mobile Name:" + this.model+ this.ram+ this.rom )
+//     }
+// }
+// let m = new mobiles("realMe",20000,"8gb",256);
+// let m2 = new mobiles("iqOO",25000,"8gb",256);
+// console.log(m2)
+
+// m2.upDate("12gb");
+// console.log(m2);
+
+
+
+
+class student{
+    constructor(name,marks,attendance){
+        this.name = name;
+        this.marks = marks;
+        this.attendance = attendance;
+    }
+    getUniform(){
+        return("student ",this.name+this.marks,this.attendance)
+    }
+}
+class activities extends student{
+    constructor(playing,studying,name,marks,attendance){
+        super(name,marks,attendance);
+        this.playing = playing;
+        this.studying = studying;
+
+    }
+}
+let p1 = new student("pavan",75,"80%");
+let p2 = new activities("binladen",75,"80%","hyper active","good")
+console.log(p1,p2);
+</script>
