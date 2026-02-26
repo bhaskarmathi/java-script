@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <head>
+
+        <title>Document</title>
+    </head>
+
+    <!-- <button onclick="sayHi()">Click</button> -->
+    <!-- <button id="btn">Click</button> -->
+    <div id="box" style="width:200px;
+    height:100px;
+    padding:16px;
+    border:1px solid #000;
+    background-color: coral;">
+        Move mouse over this box
+    </div>
+    <input id="k" type="text" placeholder="Press a key">
+    <p id="key"></p>
+
+
+    <button id="startTimeout">startTimeOut</button>
+    <button id="clearTimeout">stopTimeOut</button>
+    <br><br>
+    <button id="startInterval">startInterval</button>
+    <button id="stopInterval">stopInterval</button>
+    <p id="text"></p>
+    <p id="hello"></p>
+</body>
+
+</html>
+<script>
+    let timeoutId;
+    let interValid;
+    let count = 0;
+
+    document.getElementById("startTimeout").addEventListener("click", function () {
+        timeOutId = setTimeout(function () {
+            document.getElementById("text").innerText = "timeout executed";//time sets and runOnce
+        }, 2000);
+    });
+
+
+    document.getElementById("clearTimeout").addEventListener("click", function () {
+        clearTimeout(timeoutId);
+        document.getElementById("text").innerText = "TimeCleared" //timeCleared
+    })
+
+    document.getElementById("startInterval").addEventListener("click", function () {
+        interValid = setInterval(function () {
+            count++;
+            document.getElementById("hello").innerText = "intervalCount" + count  //runs repeatedly
+        }, 1000);
+    });
+
+
+    document.getElementById("stopInterval").addEventListener("click", function () {
+        clearInterval(interValid);
+        document.getElementById("hello").innerText = "interval stopped";//stops counter
+    })
+
+    const k = document.getElementById("k");
+    k.addEventListener("keydown", function (event) {
+        document.getElementById("key").innerHTML = "You pressed: " + event.key; 
+    })
+    let box = document.getElementById("box");
+    box.addEventListener("mouseover", function () {
+        box.innerHTML = "mouse over me"
+    })
+    box.addEventListener("mouseout", function () {
+        box.innerHTML = "mouse is out"
+    })
+
+    box.addEventListener("mousemove", function (event) {
+        box.innerHTML = (event.clientX + "," + event.clientY);
+    })
+
+    // box.addEventListener("mousedown", function (event) {
+    //     box.innerHTML = event.clientX + "," + event.clientY
+    // })
+
+
+
+    // //mouse click a inline event is directly written inside html hardToMaintain,notReusable,oldStyle;
+    // function sayHi() {
+    //     alert("Hi Bhaskar");
+    // }
+
+    let btn = document.getElementById("btn");
+    // btn.onclick = function () {
+    //     console.log("dom property")
+    // };
+    // btn.addEventListener("click", () => {
+    //     console.log("clicked")
+    // })
+</script>

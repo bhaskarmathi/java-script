@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <P id="first">hai</P>
+    <div id="first">
+        <p>hello</p>
+        <p>hai</p>
+
+        <h1 class="allElements">123</h1>
+
+        <div class="allElements">
+            <p>hello class</p>
+            <p>hai class</p>
+            <P>hello</P>
+            <a href="link">present</a>
+            <a href="link 2">past</a>
+        </div> -->
+    </div>
+    <div class="hello">1st paragraph
+        <p id="remove">i am child</p>
+    </div>
+    <div id="hai ">2nd paragraph
+        <p class="hey">i wanna remove</p>
+    </div>
+    <script>
+        // let y = document.createElement("p");
+        // y.innerText = "this is special paragraph";
+        // let parent = document.getElementsByClassName("hello")[0]
+        // let last = document.getElementById("hai");
+        // parent.insertBefore(y, last)
+
+        // let element = document.querySelector(".hey");
+        // element.remove();
+
+        // let parent = document.getElementsByClassName("hello")[0];
+        // let y = document.getElementById("remove");
+        // parent.removeChild(y);
+
+        let y = document.createElement("h");
+        y.innerText = "this me me";
+
+        let x = document.querySelector("#remove");
+        x.replaceChildren(y);
+    </script>
+</body>
+
+</html>
+<script>
+    //let x = document.getElementById("first");single element
+    //let x = document.getElementsByClassName("allElements");
+    //let x = document.getElementsByTagName("p"); all elements
+    //let x = document.querySelector(".allElements")#id,.class,tagname
+    //let x = document.querySelectorAll("#first");these elements are are specified for few tags (body,head,title,anchor,forms,images,scripts)
+
+    //console.log(document.body);
+    //console.log(document.links)
+    // let n = document.createElement("P");
+    // n.innerText = "2nd paragraph";
+
+    // let parent = document.querySelector(".hello");
+
+    // parent.appendChild(n);
+
+
+
+
+</script>

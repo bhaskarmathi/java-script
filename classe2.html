@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// class name{
+//     constructor(name,phone,address){
+//         this.name = name;
+//         this.phone = phone;
+//         this.address = address;
+//     }
+//     getFullName(){
+//         return(this.name)
+//     }
+// }
+
+// class student extends name{
+//     constructor(name,phone,address,collage,sec){
+//     super(name,phone,address);
+//     this.collage = collage;
+//     this.sec = sec;
+//   }
+//   setUniForm(collage){
+//     return(this.collage)
+//   }
+// }
+// let p = new name("pavan",112233,"bomminimpadu")
+// let p2 = new student("pavanthonda",252525,"gudivada","anr","mca");
+// console.log(p.getFullName())
+// console.log(p2.setUniForm());
+
+
+
+class mobile{
+    constructor(charger){
+        this._charger = charger
+    }
+    get charger(){
+        return (this._charger)
+    }
+    set charger(value){
+        this._charger = value
+    }
+    getAndroid(){
+        return("charger",this._charger)
+    }
+}
+class mobileCase extends mobile{
+    constructor(charger,cable){
+        super(charger)
+        this._cable = cable;
+    }
+    get cable(){
+        return(this._cable);
+    }
+    set cable(value){
+       this._cable = value;
+    }
+    getOs(){
+        return("cable",this._cable)
+    }
+}
+class mobileGuard extends mobileCase{
+    constructor(screen,charger,cable){
+        super(charger,cable)
+        this._screen = screen
+   }
+   get mobileGuard(){
+    return(this._screen);
+   }
+   set mobileGuard(value){
+    this._screen = value
+   }
+   getHyperOs(){
+    return("screen",this._screen)
+   }
+
+}
+
+let binladen = new mobileGuard("RealMe Charger", "Type-C Cable", "Tempered Glass");
+binladen.charger="oppo"
+binladen.cable = "otg cable"
+binladen.mobileGuard = "protective"
+console.log(binladen);
+console.log(binladen.getAndroid());
+console.log(binladen.getOs());
+console.log(binladen.getHyperOs());
+
+
+
+
+//encapsulation safe and secure when you give an access it allows you
+
+// class bank{
+//     #balance =0 //true private
+
+//     deposit(amount){
+//         if(amount>0){
+//             this.#balance += amount
+//             console.log("deposit"+amount)
+//         }else{
+//             console.log("positive amount")
+//         }
+//     }
+//     withdraw(amount){
+//         if(amount<=this.#balance){
+//             this.#balance -=amount;
+//             console.log("withdraw amount"+amount)
+//         }else{
+//             console.log("insufficient")
+//         }
+//     }
+//     getBalance(){
+//         return this.#balance
+//     }
+
+// }
+
+// let myAccount =new bank();
+
+// myAccount.deposit(500);
+// myAccount.deposit(1000);
+// console.log("Balance:", myAccount.getBalance());
+
+// myAccount.withdraw(300);
+// myAccount.withdraw(1500)
+// console.log("Balance:", myAccount.getBalance());
+
+
+// class Animal{
+//     constructor(name){
+//         this.name = name
+//     }
+//     speak(){
+//         return this.name+"makeSound"
+//     }
+// }
+
+// class dog extends Animal{
+//     constructor(name){
+//         super(name)
+//     }
+//     speak(){
+//         return this.name+"barks"
+//     }
+// }
+
+// class cat extends Animal{
+//     constructor(name){
+//         super(name)
+//     }
+//     speak(){
+//         return this.name+"meows"
+//     }
+// }
+
+//   function makeSound(Animal){
+//     return Animal.speak();
+//   }
+
+// let p1 = new dog("tommy ");
+// let p2 = new cat ("persin ")
+ 
+//  console.log(makeSound(p1));
+//  console.log(makeSound(p2));
+
+ 
+console.log(this)
+
+</script>

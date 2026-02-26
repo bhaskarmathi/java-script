@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="sayHi()">click</button>
+  <button id="btn">click</button>
+  <div></div>
+
+  <script>
+    const div = document.querySelector("div");
+
+    div.addEventListener("mouseenter", changeBg);
+
+    function changeBg() {
+      div.style.backgroundColor = "darkgreen";
+      div.style.cursor = "pointer";
+    }
+
+    function sayHi() {
+      console.log("hi bro");
+    }
+    let btn = document.getElementById("btn").innerText = "clickMe";
+    btn.onclick = function () {
+      btn.style.color = "red";
+      //btn.style.backgroundColor = "red";
+      btn.style.fontSize = "40px";
+      btn.style.padding = "15px 30px";
+      console.log("button clicked");
+    }
+
+
+
+
+  </script>;
+
+
+</body>
+
+</html>
